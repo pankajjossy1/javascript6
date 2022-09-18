@@ -1,1 +1,20 @@
+//Assigmnt Q No 1
+class Rectangle {
+    constructor(length , breadth=length){
+        this.length = length
+        this.breadth = breadth
+    }
 
+    area(){
+        console.log(this.length *this.breadth)
+    }
+}
+
+class Square extends Rectangle {
+  constructor(length) {
+    super(length);
+  }
+}
+
+obj = new Square(5);
+obj.area();
